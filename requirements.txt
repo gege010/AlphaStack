@@ -1,0 +1,38 @@
+# ═══════════════════════════════════════════════════════════════════
+#  requirements.txt — Market Prediction AI
+#
+#  ⚠  PyTorch (GPU) is NOT listed here.
+#     Install it separately with the correct CUDA wheel:
+#
+#     RTX 4050 / any NVIDIA GPU (CUDA 12.6):
+#       pip install torch torchvision torchaudio \
+#           --index-url https://download.pytorch.org/whl/cu126
+#
+#     Or just run:  setup_gpu.bat   (Windows)
+# ═══════════════════════════════════════════════════════════════════
+
+# ── Data ──────────────────────────────────────────────────────────
+yfinance>=0.2.50
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0
+
+# ── Feature engineering ───────────────────────────────────────────
+scikit-learn>=1.3.0
+
+# ── Models ────────────────────────────────────────────────────────
+xgboost>=2.0.0
+
+# ── Visualisation / Dashboard ─────────────────────────────────────
+plotly>=5.18.0
+streamlit>=1.28.0
+matplotlib>=3.8.0
+
+# ── Utilities ─────────────────────────────────────────────────────
+loguru>=0.7.2
+joblib>=1.3.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+
+# ── Optional: LLM commentary ──────────────────────────────────────
+# anthropic>=0.30.0
